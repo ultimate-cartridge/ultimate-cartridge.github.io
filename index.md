@@ -2,4 +2,4 @@
 layout: default
 ---
 
-<meta http-equiv="refresh" content="0; url=/Top/" />
+<meta http-equiv="refresh" content="0; url=/ja/Top/" />
