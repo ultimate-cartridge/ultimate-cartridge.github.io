@@ -2,7 +2,7 @@
 layout: default
 lang: ja
 title: Jan Allaerts (Ultimate-Cartridge Edition)   Arion MC Cartridge
-
+ref: cartridge1
 ---
 
 # Jan Allaerts (Ultimate-Cartridge Edition)   Arion MC Cartridge
