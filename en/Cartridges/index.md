@@ -1,6 +1,7 @@
 ---
-layout: default-en
+layout: default
 title: Cartridges
+lang: en
 ---
 
 

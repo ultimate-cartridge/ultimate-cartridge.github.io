@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ page.lang | default: 'ja' }}">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,45 +8,18 @@
 </head>
 
 <body>
-  <div class="layout-wrapper">
-    <div class="site-header">
-      <a href="/ja/Top/">
-        <img src="/assets/ic-top-logo.png" class="site-logo" alt="Site Logo">
-      </a>
-      <div class="language-switch">
-        <a href="/ja/Top/"><img src="/assets/ic-lang/ic-ja.png" alt="日本語"></a>
-        <a href="/en/Top/"><img src="/assets/ic-lang/ic-en.png" alt="English"></a>
-      </div>
-    </div>
+  <div class="layout-wrapper" style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    {% include header.html %}
 
     <div style="display: flex; flex: 1 0 auto;">
-      <nav class="side-nav">
-        <ul class="nav-list">
-          <li><a href="/ja/Top/"
-              class="{% if page.url == '/ja/Top/' %}nav-link active{% else %}nav-link{% endif %}">Top</a></li>
-          <li><a href="/ja/Services/"
-              class="{% if page.url == '/ja/Services/' %}nav-link active{% else %}nav-link{% endif %}">Services</a></li>
-          <li><a href="/ja/Cartridges/"
-              class="{% if page.url == '/ja/Cartridges/' %}nav-link active{% else %}nav-link{% endif %}">Cartridges</a>
-          </li>
-          <li><a href="/ja/Company/"
-              class="{% if page.url == '/ja/Company/' %}nav-link active{% else %}nav-link{% endif %}">会社概要</a></li>
-          <li><a href="/ja/contact/"
-              class="{% if page.url == '/ja/contact/' %}nav-link active{% else %}nav-link{% endif %}">連絡先情報</a></li>
-        </ul>
-      </nav>
-
-      <!-- 右侧内容区 -->
+      {% include nav.html %}
       <main style="flex: 1; padding: 20px;">
         {{ content }}
       </main>
     </div>
-    <!-- 页脚 -->
-    <footer
-      style="text-align: center; padding: 24px 0; background: #f5f5f5; color: #888; font-size: 14px; border-top: 1px solid #eee; margin-top: 40px;">
-      <div>ユルティメット・カートリッジ株式会社</div>
-      <div>© 2020-2025 Ultimate Cartridge. All rights reserved.</div>
-    </footer>
+
+    {% include footer.html %}
   </div>
 </body>
 

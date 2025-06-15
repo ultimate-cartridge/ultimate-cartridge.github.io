@@ -1,6 +1,7 @@
 ---
 layout: default
 title: OEM-5
+lang: ja
 ---
 
 

@@ -2,4 +2,13 @@ theme: jekyll-theme-minimal
 title: Ultimate Cartridge
 description: Bookmark this to keep an eye on my project updates!
 languages: ["en", "ja"]
-default_lang: "en"
+default_lang: "ja"
+
+collections:
+  OEMs:
+    output: true
+    permalink: /OEMs/page:page_number/
+    
+
+
+

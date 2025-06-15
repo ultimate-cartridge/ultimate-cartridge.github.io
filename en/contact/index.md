@@ -1,6 +1,7 @@
 ---
-layout: default-en
+layout: default
 title: Contact Information
+lang: en
 ---
 
 # Contact Information

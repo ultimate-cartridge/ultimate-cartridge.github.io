@@ -1,6 +1,7 @@
 ---
 layout: default
 title: repair
+lang: ja
 ---
 
 

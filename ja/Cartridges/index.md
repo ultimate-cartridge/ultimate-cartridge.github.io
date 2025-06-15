@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cartridges
+lang: ja
 ---
 
 # Cartridges

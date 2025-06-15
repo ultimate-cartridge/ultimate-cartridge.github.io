@@ -1,6 +1,7 @@
 ---
-layout: default-en
+layout: default
 title: Company Profile
+lang: en
 ---
 
 ## Company Profile

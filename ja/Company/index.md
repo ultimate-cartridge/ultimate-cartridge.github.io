@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 連絡先情報
+lang: ja
 ---
 
 ## 会社概要

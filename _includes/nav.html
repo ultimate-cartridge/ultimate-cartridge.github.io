@@ -1,0 +1,13 @@
+<nav class="side-nav" style="width: 200px; padding: 20px; background: #f5f5f5;">
+    <ul class="nav-list" style="list-style: none; padding: 0;">
+        {% assign lang = page.lang | default: 'ja' %}
+        {% assign nav = site.data.navigation[lang] %}
+        {% for item in nav %}
+        <li>
+            <a href="{{ item.url }}" class="{% if page.url == item.url %}nav-link active{% else %}nav-link{% endif %}">
+                {{ item.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

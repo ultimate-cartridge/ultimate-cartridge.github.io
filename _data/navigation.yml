@@ -1,0 +1,23 @@
+en:
+  - title: Top
+    url: /en/Top/
+  - title: Services
+    url: /en/Services/
+  - title: Cartridges
+    url: /en/Cartridges/
+  - title: Company
+    url: /en/Company/
+  - title: Contact
+    url: /en/contact/
+
+ja:
+  - title: Top
+    url: /ja/Top/
+  - title: Services
+    url: /ja/Services/
+  - title: Cartridges
+    url: /ja/Cartridges/
+  - title: 会社情報
+    url: /ja/Company/
+  - title: お問い合わせ
+    url: /ja/contact/
