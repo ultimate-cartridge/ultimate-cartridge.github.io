@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .site-header {
   display: flex;
   align-items: center;
@@ -25,4 +30,44 @@
 }
 .site-logo {
   height: 80px;
+}
+
+/* 侧边导航栏 */
+.side-nav {
+  width: 200px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #eeeeee, #ffffff);
+  font-family: Georgia, serif;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 20px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #aaa;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid darkred;
+}
+
+.layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout-wrapper > footer {
+  margin-top: auto;
 }
