@@ -1,0 +1,28 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: linear-gradient(to bottom, #999999, #ffffff);
+  /* border-bottom: 1px solid #eee; */
+}
+.language-switch {
+  display: flex;
+  gap: 8px;
+}
+.language-switch a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.language-switch img {
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+.language-switch a:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px #aaa;
+}
+.site-logo {
+  height: 80px;
+}
