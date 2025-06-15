@@ -4,11 +4,11 @@ description: Bookmark this to keep an eye on my project updates!
 languages: ["en", "ja"]
 default_lang: "ja"
 
+collections_dir: collections
 collections:
-  OEMs:
+  oem:
     output: true
-    permalink: /OEMs/page:page_number/
-    
-
-
-
+    permalink: /:lang/oem/:name/
+  top:
+    output: true
+    permalink: /:lang/top/:name/

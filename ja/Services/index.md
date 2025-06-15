@@ -9,7 +9,9 @@ lang: ja
 
 
 <div style="background: linear-gradient(white, #f9d976); border: 1px solid black; padding: 1.5em; text-align: center; font-size: 20px; font-family: 'Arial', sans-serif; margin: 0 0 1em 0; width: calc(100% - 2em); max-width: 660px; height: 180px; display: flex; align-items: center; justify-content: center;">
-  <span style="width:100%;">* カートリッジOEM製造サービス *</span>
+  <span style="width:100%;">
+    * <a href="/ja/Services/oem/01/" style="color: inherit; text-decoration: underline;">カートリッジOEM製造サービス</a> *
+  </span>
 </div>
 
 <div style="background: linear-gradient(white, #f9d976); border: 1px solid black; padding: 1.5em; text-align: center; font-size: 20px; font-family: 'Arial', sans-serif; margin: 0 0 1em 0; width: calc(100% - 2em); max-width: 660px; height: 180px; display: flex; align-items: center; justify-content: center;">

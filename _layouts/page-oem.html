@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'ja' }}">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="layout-wrapper" style="display: flex; flex-direction: column; min-height: 100vh;">
+
+        {% include header.html %}
+
+        <div style="display: flex; flex: 1 0 auto;">
+            {% include nav.html %}
+            <main style="flex: 1; padding: 20px;">
+                {{ content }}
+
+                {% if page.order %}
+                {% assign all_pages = site.oem | where: "lang", page.lang | sort: "order" %}
+                {% assign max = all_pages | size %}
+                {% assign current = page.order | plus: 0 %}
+                <div
+                    style="margin-top: 2em; display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+
+                    <!-- Prev -->
+                    {% assign prev_order = current | minus: 1 %}
+                    {% assign prev_page = all_pages | where: "order", prev_order | first %}
+                    {% if prev_page %}
+                    <a href="{{ prev_page.url }}">← 前のページ</a>
+                    {% else %}
+                    <span style="visibility: hidden;">← 前のページ</span>
+                    {% endif %}
+
+                    <!-- Page number -->
+                    <span>ページ {{ current }} / {{ max }}</span>
+
+                    <!-- Next -->
+                    {% assign next_order = current | plus: 1 %}
+                    {% assign next_page = all_pages | where: "order", next_order | first %}
+                    {% if next_page %}
+                    <a href="{{ next_page.url }}">次のページ →</a>
+                    {% else %}
+                    <span style="visibility: hidden;">次のページ →</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </main>
+        </div>
+
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>
