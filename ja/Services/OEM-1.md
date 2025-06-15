@@ -1,0 +1,16 @@
+---
+layout: default
+title: OEM-1
+---
+
+
+# OEM-1
+
+スネークウッドを再採用した今回の試みでは、過去の知見を活かし、オープン構造を採用。重心をさらに前方に配置し、外装金属部を最小限に抑えることで、最高レベルのコンプライアンスを実現しました。構造はJan Allaertsの設計案を採用し、特に問題もなく進行しましたが、筐体材質にはより優れた選択肢があったかもしれません。ブランド側の要請により90台のみを生産、この希少な90台を手にされた幸運なコレクターの方々に心よりお慶び申し上げます。
+
+![1](/assets/Services/OEM-1/1.JPG)
+![2](/assets/Services/OEM-1/2.JPG)
+![3](/assets/Services/OEM-1/3.JPG)
+![4](/assets/Services/OEM-1/4.JPG)
+![5](/assets/Services/OEM-1/5.JPG)
+![6](/assets/Services/OEM-1/6.JPG)
