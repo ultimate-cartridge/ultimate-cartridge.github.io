@@ -73,17 +73,17 @@ html, body {
 }
 
 /* content heading */
-main h1 {
-        border-bottom: 3px solid darkred;
-        padding-bottom: 0.2em;
-        margin-bottom: 0.8em;
-        display: block;
-        width: 100%;
-        color: darkred;
-        font-size: 1.5em;
-      }
+h1 {
+  border-bottom: 3px solid darkred;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.8em;
+  display: block;
+  width: 100%;
+  color: darkred;
+  font-size: 1.5em;
+}
 
-main p {
+p {
   line-height: 1.6;
   font-size: 1.2em;
   margin-bottom: 1.2em;
