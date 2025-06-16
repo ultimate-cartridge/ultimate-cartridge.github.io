@@ -6,22 +6,21 @@ lang: ja
 
 # 連絡先情報
 
----
+<br><br>
 
-> **注意：**  
-> 当サイトはECサイトではなく、一般消費者向けの小売販売は行っておりません。  
-> カートリッジのカスタマイズサービスは音響機器メーカー及び認定販売店のみを対象としています。  
-> 購入をご希望の場合は、最寄りの販売代理店までお問い合わせください。
+注意: 当サイトはECサイトではなく、一般消費者向けの小売販売は行っておりません。  
+カートリッジのカスタマイズサービスは音響機器メーカー及び認定販売店のみを対象としています。  
+購入をご希望の場合は、最寄りの販売代理店までお問い合わせください。
 
----
+<br><br>
 
-## 専門技術に関するお問い合わせ  
+専門技術に関するお問い合わせ  
 [dr.matthiasschmelz@outlook.com](mailto:dr.matthiasschmelz@outlook.com)
 
-## ビジネスに関するお問い合わせ  
+ビジネスに関するお問い合わせ  
 [info@ultimate-cartridge.jp](mailto:info@ultimate-cartridge.jp)
 
-## 修理サービスに関するお問い合わせ  
+修理サービスに関するお問い合わせ  
 [repair@ultimate-cartridge.jp](mailto:repair@ultimate-cartridge.jp)
 
 ---

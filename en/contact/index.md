@@ -6,22 +6,23 @@ lang: en
 
 # Contact Information
 
----
+<br><br>
 
-> **Note:**  
+Note:
 > This site is not an e-commerce site and does not sell directly to general consumers.  
 > Our cartridge customization service is only available to audio equipment manufacturers and authorized dealers.  
 > If you wish to purchase, please contact your nearest distributor.
 
----
 
-## For Technical Inquiries  
+<br><br>
+
+Technical Inquiries  
 [dr.matthiasschmelz@outlook.com](mailto:dr.matthiasschmelz@outlook.com)
 
-## For Business Inquiries  
+Business Inquiries  
 [info@ultimate-cartridge.jp](mailto:info@ultimate-cartridge.jp)
 
-## For Repair Service Inquiries  
+Repair Service Inquiries  
 [repair@ultimate-cartridge.jp](mailto:repair@ultimate-cartridge.jp)
 
 ---

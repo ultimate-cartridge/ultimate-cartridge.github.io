@@ -4,7 +4,7 @@ title: Company Profile
 lang: en
 ---
 
-## Company Profile
+# Company Profile
 
 Ultimate Cartridge was officially established in Chiba Prefecture in October 2010 by five NHK audio engineers. At the time of its founding, the main business was the repair of MC cartridges and the design and repair of audio amplifiers.
 
