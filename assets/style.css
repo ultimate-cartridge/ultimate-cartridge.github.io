@@ -73,7 +73,7 @@ html, body {
 }
 
 /* content heading */
-h1 {
+main h1 {
   border-bottom: 3px solid darkred;
   padding-bottom: 0.2em;
   margin-bottom: 0.8em;
@@ -83,7 +83,7 @@ h1 {
   font-size: 1.5em;
 }
 
-p {
+main p {
   line-height: 1.6;
   font-size: 1.2em;
   margin-bottom: 1.2em;
