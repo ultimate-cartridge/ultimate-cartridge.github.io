@@ -17,33 +17,51 @@
             <main style="flex: 1; padding: 20px;">
                 {{ content }}
 
-                {% if page.order %}
-                {% assign all_pages = site.top | where: "lang", page.lang | sort: "order" %}
+                {% if page.date %}
+                {% assign all_pages = site.top | where: "lang", page.lang | sort: "date" | reverse %}
                 {% assign max = all_pages | size %}
-                {% assign current = page.order | plus: 0 %}
+                {% assign current_index = nil %}
+                {% for p in all_pages %}
+                {% if p.url == page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% endif %}
+                {% endfor %}
                 <div
                     style="margin-top: 2em; display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
 
                     <!-- Prev -->
-                    {% assign prev_order = current | minus: 1 %}
-                    {% assign prev_page = all_pages | where: "order", prev_order | first %}
-                    {% if prev_page %}
-                    <a href="{{ prev_page.url }}">← 前のページ</a>
+                    {% if current_index > 0 %}
+                    {% assign prev_page = all_pages[current_index | minus: 1] %}
+                    <a href="{{ prev_page.url }}">{{ prev_page.url }} {% if page.lang == "en" %}← Previous Page{% else
+                        %}← 前のページ{% endif %}</a>
                     {% else %}
-                    <span style="visibility: hidden;">← 前のページ</span>
+                    <span style="visibility: hidden;">
+                        {% if page.lang == "en" %}← Previous Page{% else %}← 前のページ{% endif %}
+                    </span>
                     {% endif %}
 
                     <!-- Page number -->
-                    <span>ページ {{ current }} / {{ max }}</span>
+                    <span>
+                        {% if page.lang == "en" %}Page{% else %}ページ{% endif %}
+                        {{ current_index | plus: 1 }} / {{ max }}
+                    </span>
 
                     <!-- Next -->
-                    {% assign next_order = current | plus: 1 %}
-                    {% assign next_page = all_pages | where: "order", next_order | first %}
-                    {% if next_page %}
-                    <a href="{{ next_page.url }}">次のページ →</a>
-                    {% else %}
-                    <span style="visibility: hidden;">次のページ →</span>
-                    {% endif %}
+                    {% if current_index < max | minus: 1 %} {% assign next_index=current_index | plus: 1 %} {% assign
+                        next_page=all_pages[next_index] %} {% if next_page and next_page.url %} <a
+                        href="{{ next_page.url }}">
+                        {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </a>
+                        {% else %}
+                        <span style="visibility: hidden;">
+                            {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </span>
+                        {% endif %}
+                        {% else %}
+                        <span style="visibility: hidden;">
+                            {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </span>
+                        {% endif %}
                 </div>
                 {% endif %}
             </main>
