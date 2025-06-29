@@ -4,11 +4,25 @@
         <img src="/assets/ic-top-logo.png" class="site-logo" alt="Site Logo" style="height: 80px;">
     </a>
     <div class="language-switch">
-        <a href="/ja/" onclick="localStorage.setItem('uc_lang','ja')">
+        <a href="#" onclick="switchLang('ja'); return false;">
             <img src="/assets/ic-lang/ic-ja.png" alt="日本語" style="height: 24px;">
         </a>
-        <a href="/en/" onclick="localStorage.setItem('uc_lang','en')" style="margin-left: 8px;">
+        <a href="#" onclick="switchLang('en'); return false;" style="margin-left: 8px;">
             <img src="/assets/ic-lang/ic-en.png" alt="English" style="height: 24px;">
         </a>
     </div>
 </div>
+<script>
+    function switchLang(lang) {
+        localStorage.setItem('uc_lang', lang);
+        var path = window.location.pathname;
+        if (path.startsWith('/en/')) {
+            path = path.replace(/^\/en\//, '/' + lang + '/');
+        } else if (path.startsWith('/ja/')) {
+            path = path.replace(/^\/ja\//, '/' + lang + '/');
+        } else {
+            path = '/' + lang + '/';
+        }
+        window.location.pathname = path;
+    }
+</script>

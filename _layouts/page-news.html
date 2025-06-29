@@ -22,18 +22,29 @@
                 {% assign max = all_pages | size %}
                 {% assign current_index = nil %}
                 {% for p in all_pages %}
-                {% if p.url == page.url %}
+                {% assign p_url = p.url | replace: '/index.html', '/' | replace: '//', '/' %}
+                {% assign page_url = page.url | replace: '/index.html', '/' | replace: '//', '/' %}
+                {% if p_url == page_url %}
                 {% assign current_index = forloop.index0 %}
                 {% endif %}
                 {% endfor %}
                 <div
                     style="margin-top: 2em; display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
 
+
                     <!-- Prev -->
                     {% if current_index > 0 %}
-                    {% assign prev_page = all_pages[current_index | minus: 1] %}
-                    <a href="{{ prev_page.url }}">{{ prev_page.url }} {% if page.lang == "en" %}← Previous Page{% else
-                        %}← 前のページ{% endif %}</a>
+                    {% assign prev_index = current_index | minus: 1 %}
+                    {% assign prev_page = all_pages[prev_index] %}
+                    {% if prev_page and prev_page.url %}
+                    <a href="{{ prev_page.url }}">
+                        {% if page.lang == "en" %}← Previous Page{% else %}← 前のページ{% endif %}
+                    </a>
+                    {% else %}
+                    <span style="visibility: hidden;">
+                        {% if page.lang == "en" %}← Previous Page{% else %}← 前のページ{% endif %}
+                    </span>
+                    {% endif %}
                     {% else %}
                     <span style="visibility: hidden;">
                         {% if page.lang == "en" %}← Previous Page{% else %}← 前のページ{% endif %}
