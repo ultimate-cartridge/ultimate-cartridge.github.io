@@ -5,14 +5,16 @@ html, body {
 }
 .site-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 32px;
-  background: linear-gradient(to bottom, #999999, #ffffff);
-  /* border-bottom: 1px solid #eee; */
+  border-bottom: 1px solid #eee;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  box-sizing: border-box;
 }
 .language-switch {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 .language-switch a {
@@ -87,4 +89,45 @@ main p {
   line-height: 1.6;
   font-size: 1.2em;
   margin-bottom: 1.2em;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 12px 8px;
+  }
+  .site-logo {
+    height: 60px;
+  }
+}
+
+/* assets/style.css */
+.header-bg {
+    width: 100%;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-bottom: 1px solid #eee;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 32px 16px 32px; /* 上 右 下 左 */
+    box-sizing: border-box;
+}
+
+.site-logo {
+    height: 80px;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* 不要设置 margin-right */
+}
+
+.language-switch img {
+    height: 24px;
 }

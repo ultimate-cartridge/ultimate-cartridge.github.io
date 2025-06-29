@@ -6,15 +6,6 @@ lang: en
 
 # Contact Information
 
-<br><br>
-
-Note:
-> This site is not an e-commerce site and does not sell directly to general consumers.  
-> Our cartridge customization service is only available to audio equipment manufacturers and authorized dealers.  
-> If you wish to purchase, please contact your nearest distributor.
-
-
-<br><br>
 
 Technical Inquiries  
 [dr.matthiasschmelz@outlook.com](mailto:dr.matthiasschmelz@outlook.com)
