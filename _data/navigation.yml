@@ -3,8 +3,8 @@ en:
     url: /en/news/
   - title: Services
     url: /en/services/
-  - title: Cartridges
-    url: /en/cartridges/
+  - title: Products
+    url: /en/products/
   - title: Company
     url: /en/company/
   - title: Contact
@@ -13,10 +13,10 @@ en:
 ja:
   - title: ニュース
     url: /ja/news/
-  - title: Services
+  - title: サービス
     url: /ja/services/
-  - title: Cartridges
-    url: /ja/cartridges/
+  - title: 製品情報
+    url: /ja/products/
   - title: 会社情報
     url: /ja/company/
   - title: お問い合わせ

@@ -26,4 +26,4 @@ lang: en
   {% endfor %}
 </ul>
 
-![Cartridge 3](/assets/Cartridges/not-tappable-box.png)
+![Cartridge 3](/assets/products/not-tappable-box.png)

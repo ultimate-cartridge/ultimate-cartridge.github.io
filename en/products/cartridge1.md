@@ -17,13 +17,13 @@ The Arion cartridge boasts astonishing dynamic expression. Its sense of scale, v
 
 The Arion cartridge has evolved from the conventional J.A. metal case to a high-density processed wood case. While maintaining the lightness and low resonance characteristics of wood, it achieves mechanical strength comparable to metal materials. In addition, a variety of color customizations are now possible.
 
-![JA1](/assets/Cartridges/JA1.png)
+![JA1](/assets/products/JA1.png)
 
 ## Magnet System
 
 In the Arion, the standard J.A. magnet has been upgraded to a specially magnetized version, handcrafted for optimal performance. The optimal magnetization and material composition were determined through years of simulation measurements and practical testing. By adding trace amounts of precious metals in a unique blend, there is no degradation due to pole interference or stray magnetic fields in the fringer field between the magnet poles. This provides the ideal power generation environment for the cartridge.
 
-![JA1](/assets/Cartridges/JA2.png)
+![JA1](/assets/products/JA2.png)
 
 ## Cantilever
 
