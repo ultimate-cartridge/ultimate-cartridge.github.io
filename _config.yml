@@ -9,6 +9,6 @@ collections:
   oem:
     output: true
     permalink: /:lang/oem/:name/
-  top:
+  news:
     output: true
-    permalink: /:lang/top/:name/
+    permalink: /:lang/news/:name/

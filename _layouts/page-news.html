@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'ja' }}">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="layout-wrapper" style="display: flex; flex-direction: column; min-height: 100vh;">
+
+        {% include header.html %}
+
+        <div style="display: flex; flex: 1 0 auto;">
+            {% include nav.html %}
+            <main style="flex: 1; padding: 20px;">
+                {{ content }}
+
+                {% if page.date %}
+                {% assign all_pages = site.news | where: "lang", page.lang | sort: "date" | reverse %}
+                {% assign max = all_pages | size %}
+                {% assign current_index = nil %}
+                {% for p in all_pages %}
+                {% if p.url == page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% endif %}
+                {% endfor %}
+                <div
+                    style="margin-top: 2em; display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+
+                    <!-- Prev -->
+                    {% if current_index > 0 %}
+                    {% assign prev_page = all_pages[current_index | minus: 1] %}
+                    <a href="{{ prev_page.url }}">{{ prev_page.url }} {% if page.lang == "en" %}← Previous Page{% else
+                        %}← 前のページ{% endif %}</a>
+                    {% else %}
+                    <span style="visibility: hidden;">
+                        {% if page.lang == "en" %}← Previous Page{% else %}← 前のページ{% endif %}
+                    </span>
+                    {% endif %}
+
+                    <!-- Page number -->
+                    <span>
+                        {% if page.lang == "en" %}Page{% else %}ページ{% endif %}
+                        {{ current_index | plus: 1 }} / {{ max }}
+                    </span>
+
+                    <!-- Next -->
+                    {% if current_index < max | minus: 1 %} {% assign next_index=current_index | plus: 1 %} {% assign
+                        next_page=all_pages[next_index] %} {% if next_page and next_page.url %} <a
+                        href="{{ next_page.url }}">
+                        {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </a>
+                        {% else %}
+                        <span style="visibility: hidden;">
+                            {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </span>
+                        {% endif %}
+                        {% else %}
+                        <span style="visibility: hidden;">
+                            {% if page.lang == "en" %}Next Page →{% else %}次のページ →{% endif %}
+                        </span>
+                        {% endif %}
+                </div>
+                {% endif %}
+            </main>
+        </div>
+
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>

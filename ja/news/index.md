@@ -1,7 +1,9 @@
 ---
 layout: default
+title: ニュース
 lang: ja
 ---
+
 
 {% assign first_news = site.news | where: "lang", page.lang | sort: "date" | last %}
 {% if first_news %}

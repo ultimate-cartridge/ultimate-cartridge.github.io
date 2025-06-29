@@ -1,6 +1,6 @@
 en:
-  - title: Top
-    url: /en/top/
+  - title: News
+    url: /en/news/
   - title: Services
     url: /en/services/
   - title: Cartridges
@@ -11,8 +11,8 @@ en:
     url: /en/contact/
 
 ja:
-  - title: Top
-    url: /ja/top/
+  - title: ニュース
+    url: /ja/news/
   - title: Services
     url: /ja/services/
   - title: Cartridges

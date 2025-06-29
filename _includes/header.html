@@ -1,13 +1,13 @@
 <div class="site-header"
     style="display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; border-bottom: 1px solid #eee; background: linear-gradient(to right, #f8f9fa, #ffffff);">
-    <a href="{% if page.lang == 'ja' %}/ja/top/{% else %}/en/top/{% endif %}">
+    <a href="{% if page.lang == 'ja' %}/ja/news/{% else %}/en/news/{% endif %}">
         <img src="/assets/ic-top-logo.png" class="site-logo" alt="Site Logo" style="height: 80px;">
     </a>
     <div class="language-switch">
-        <a href="/ja{{ page.url | remove_first: '/en' | remove_first: '/ja' }}">
+        <a href="/ja/" onclick="localStorage.setItem('uc_lang','ja')">
             <img src="/assets/ic-lang/ic-ja.png" alt="日本語" style="height: 24px;">
         </a>
-        <a href="/en{{ page.url | remove_first: '/ja' | remove_first: '/en' }}" style="margin-left: 8px;">
+        <a href="/en/" onclick="localStorage.setItem('uc_lang','en')" style="margin-left: 8px;">
             <img src="/assets/ic-lang/ic-en.png" alt="English" style="height: 24px;">
         </a>
     </div>
