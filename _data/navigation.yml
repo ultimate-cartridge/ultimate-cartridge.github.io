@@ -9,8 +9,6 @@ en:
     url: /en/company/
   - title: Contact
     url: /en/contact/
-  - title: Note
-    url: /en/note/
 
 ja:
   - title: ニュース
@@ -23,5 +21,3 @@ ja:
     url: /ja/company/
   - title: お問い合わせ
     url: /ja/contact/
-  - title: 注意事項
-    url: /ja/note/

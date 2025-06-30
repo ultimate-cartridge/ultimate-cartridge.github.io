@@ -1,9 +1,13 @@
 ---
 layout: default
+title: Note
 lang: en
 ---
 
-{% assign first_news = site.news | where: "lang", page.lang | sort: "date" | last %}
-{% if first_news %}
-  <meta http-equiv="refresh" content="0; url={{ first_news.url }}" />
-{% endif %}
+# Note
+
+<br><br>
+
+> This site is not an e-commerce site and does not sell directly to general consumers.  
+> Our cartridge customization service is only available to audio equipment manufacturers and authorized dealers.  
+> If you wish to purchase, please contact your nearest distributor.
