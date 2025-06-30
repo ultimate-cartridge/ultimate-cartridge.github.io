@@ -156,13 +156,13 @@ main img {
     gap: 12px;
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
   }
   .nav-list li {
     margin: 0;
   }
   .nav-link {
-    font-size: 13px;
+    font-size: 12px;
     padding: 4px 8px;
   }
 }
@@ -239,4 +239,24 @@ main img {
   width: 100%;
   padding: 1.5em;
   box-sizing: border-box;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 1em;
+}
+.social-icon {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
 }

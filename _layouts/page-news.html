@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'ja' }}">
 
-<head>
-    <meta charset="UTF-8" />
-    <title>{{ site.title }} | {{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
+{% include head.html %}
 
 <body>
     <div class="layout-wrapper" style="display: flex; flex-direction: column; min-height: 100vh;">
