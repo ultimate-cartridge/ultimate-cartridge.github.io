@@ -4,23 +4,20 @@ title: Services
 lang: ja
 ---
 
-
 # Services
 
-
-<div style="background: linear-gradient(white, #f9d976); border: 1px solid black; padding: 1.5em; text-align: center; font-size: 20px; font-family: 'Arial', sans-serif; margin: 0 0 1em 0; width: calc(100% - 2em); max-width: 660px; height: 180px; display: flex; align-items: center; justify-content: center;">
-  <span style="width:100%;">
-    * <a href="/ja/services/oem/01/" style="color: inherit; text-decoration: underline;">カートリッジOEM製造サービス</a> *
-  </span>
+<div class="service-box">
+  <img src="/assets/services/bg-service-box.png" alt="" />
+  <div>
+    <a href="/ja/services/oem/01/" class="service-link">*カートリッジOEM製造サービス*</a>
+  </div>
 </div>
 
-<div style="background: linear-gradient(white, #f9d976); border: 1px solid black; padding: 1.5em; text-align: center; font-size: 20px; font-family: 'Arial', sans-serif; margin: 0 0 1em 0; width: calc(100% - 2em); max-width: 660px; height: 180px; display: flex; align-items: center; justify-content: center;">
-    * <a href="/ja/services/repair.html" style="color: inherit; text-decoration: underline;">カートリッジ修理サービス</a> *
+<div class="service-box">
+  <a href="/ja/services/repair.html" class="service-link">*カートリッジ修理サービス*</a>
 </div>
 
-
-
-<!-- 自动列出 ja/services/OEM 文件夹下的所有页面 -->
+<!-- 自動で ja/services/OEM フォルダ内の全ページをリスト -->
 <ul>
   {% assign cartridge_pages = site.pages | where_exp: "page", "page.path contains 'ja/services/OEM/'" %}
   {% for page in cartridge_pages %}
