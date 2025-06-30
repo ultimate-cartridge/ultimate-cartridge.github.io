@@ -131,3 +131,62 @@ main p {
 .language-switch img {
     height: 24px;
 }
+
+@media (max-width: 700px) {
+  .side-nav {
+    width: 100%;
+    padding: 10px 0;
+    background: #f5f5f5;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-list li {
+    margin: 0;
+  }
+}
+
+/* 主体布局：宽屏为左右，窄屏为上下 */
+.main-content-flex {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+/* 宽屏：侧边栏在左，内容在右 */
+@media (min-width: 701px) {
+  .main-content-flex {
+    flex-direction: row;
+  }
+  .side-nav {
+    width: 200px;
+    min-width: 160px;
+  }
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+}
+
+/* 窄屏：导航在上，内容在下 */
+@media (max-width: 700px) {
+  .main-content-flex {
+    flex-direction: column;
+  }
+  .side-nav {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 0;
+  }
+  main {
+    padding: 12px;
+  }
+}

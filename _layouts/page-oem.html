@@ -12,9 +12,9 @@
 
         {% include header.html %}
 
-        <div style="display: flex; flex: 1 0 auto;">
+        <div class="main-content-flex">
             {% include nav.html %}
-            <main style="flex: 1; padding: 20px;">
+            <main>
                 {{ content }}
 
                 {% if page.order %}

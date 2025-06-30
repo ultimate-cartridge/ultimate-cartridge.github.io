@@ -1,5 +1,5 @@
-<nav class="side-nav" style="width: 200px; padding: 20px; background: #f5f5f5;">
-    <ul class="nav-list" style="list-style: none; padding: 0;">
+<nav class="side-nav">
+    <ul class="nav-list">
         {% assign lang = page.lang | default: 'ja' %}
         {% assign nav = site.data.navigation[lang] %}
         {% for item in nav %}
