@@ -1,9 +1,10 @@
 ---
 layout: default
-lang: jp
+lang: ja
 title: kiseki
 ref: kiseki
 ---
+
 
 # kiseki
 
@@ -17,6 +18,3 @@ Kisekiの改造バージョンのカートリッジの生産は終了しまし�
 
 ![kiseki-1](/assets/products/kiseki-1.jpg)
 ![kiseki-2](/assets/products/kiseki-2.jpg)
-
-
-
