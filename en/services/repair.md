@@ -10,6 +10,6 @@ Due to the large number of headphone repair cases, we will no longer be posting 
 
 <span class="social-icons">
   [![Instagram](/assets/social-media/ic-ig.png){:class="social-icon"}](https://www.instagram.com/ultimatecartridge?igsh=MWlxeTA3YTY5bmhhYg==)
-  [![X](/assets/social-media/ic-x.png){:class="social-icon"}](https://x.com/Ultimatear28930?t=fMOBVFvatHWM5GKmqOJfKQ&s=09)
+  [![X](/assets/social-media/ic-x.png){:class="social-icon"}](https://x.com/UltimateCa28930?t=7-8xhk4gARa-KitAOmD0jQ&s=09)
   [![Facebook](/assets/social-media/ic-fb.png){:class="social-icon"}](https://www.facebook.com/share/1EpQQyXCqW/)
 </span>
