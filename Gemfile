@@ -1,5 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "jekyll-multiple-languages-plugin"
-gem "jekyll-theme-minimal"
+gem 'jekyll'
+gem 'jekyll-multiple-languages-plugin'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jekyll-theme-minimal'

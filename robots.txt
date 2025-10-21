@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ultimate-cartridge.jp/sitemap.xml

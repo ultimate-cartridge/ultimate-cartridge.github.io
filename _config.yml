@@ -5,6 +5,8 @@ title: Ultimate Cartridge
 description: Ultimate Cartridge!
 languages: ["en", "ja"]
 default_lang: "ja"
+url: "https://ultimate-cartridge.jp"
+baseurl: ""
 
 collections_dir: collections
 collections:
@@ -14,3 +16,8 @@ collections:
   news:
     output: true
     permalink: /:lang/news/:name/
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-seo-tag
+  - jekyll-sitemap
