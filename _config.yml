@@ -21,4 +21,4 @@ collections:
 plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-seo-tag
-  - jekyll-sitemapcon
+  - jekyll-sitemap
