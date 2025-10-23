@@ -7,7 +7,7 @@ languages: ["en", "ja"]
 default_lang: "ja"
 url: "https://ultimate-cartridge.jp"
 baseurl: ""
-keywords: mc cartridge,mc cartridge repair,cartridge needle repair,cartridge stylus repair,MCカートリッジの修理,ortofon, koetsu,my sonic lab,Bluelectric,jan allaerts,lyra,Etsuro,emt,Clearaudio,Kiseki,linn,vdh,Ven Den HUL,Dynavector,IKEDA,ds audio,Audio-Technica,オルトフォン,コーツ,マイソニックラボ,ブルエレクトリック,ヤンアラーツ,ライラ,エツロー,EMT,クリアオーディオ,キセキ,リン,VDH,ダイナベクター,イケダ,DSオーディオ,オーディオテクニカ
+keywords: mc cartridge,mc cartridge repair,cartridge needle repair,cartridge stylus repair,ortofon,koetsu,my sonic lab,Bluelectric,jan allaerts,lyra,Etsuro,emt,Clearaudio,Kiseki,linn,vdh,Ven Den HUL,Dynavector,IKEDA,ds audio,Audio-Technica;MCカートリッジの修理,オルトフォン,コーツ,マイソニックラボ,ブルエレクトリック,ヤンアラーツ,ライラ,エツロー,EMT,クリアオーディオ,キセキ,リン,VDH,ダイナベクター,イケダ,DSオーディオ,オーディオテクニカ
 
 collections_dir: collections
 collections:
